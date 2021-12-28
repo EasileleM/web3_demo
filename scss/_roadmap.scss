@@ -1,0 +1,30 @@
+.wrapper-roadmap {
+    color: black;
+}
+
+.roadmap {
+    padding: 50px 0;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__name {
+        text-align: center;
+        font-size: 65px;
+        @include font-regular;
+    }
+
+    &__period {
+        text-align: center;
+        font-size: 22px;
+        @include font-regular;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 25px;
+        color: #919191;
+        @include font-regular;
+    }
+}
