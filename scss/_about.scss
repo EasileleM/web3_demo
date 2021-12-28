@@ -1,6 +1,8 @@
 .wrapper-about {
-    background-size: cover;
     background-image: url('../img/about-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: $white;
     height: 100vh;
 }

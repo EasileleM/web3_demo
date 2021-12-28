@@ -1,6 +1,8 @@
 .wrapper-home {
+    background-image: url('../img/background-light.png');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-image: url('../img/home-background.png');
     background-color: #171F3D;
     height: 100vh;
 }
@@ -126,12 +128,23 @@
     justify-content: center;
     position: relative;
 
+    &__sun-image {
+        position: absolute;
+        left: 50%;
+        top: 150px;
+        transform: translateX(-50%);
+        height: 340px;
+        width: auto;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
+
     &__image {
         position: absolute;
         left: 50%;
         top: 300px;
         transform: translateX(-50%);
-        height: 340px;
+        height: 310px;
         width: auto;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
