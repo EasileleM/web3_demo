@@ -85,12 +85,9 @@
     }
 }
 .welcome-text {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 117px;
-    left: 474px;
 
     &__big-text {
         font-family: $font;
@@ -125,17 +122,19 @@
 }
 
 .section-home {
+    display: flex;
+    justify-content: center;
     position: relative;
 
     &__image {
         position: absolute;
-        left: 249px;
+        left: 50%;
         top: 300px;
+        transform: translateX(-50%);
         height: 340px;
         width: auto;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
-        transform-origin: bottom;
     }
 
     &__image-bounce {
@@ -143,8 +142,8 @@
         animation-timing-function: cubic-bezier(0.27,-0.01, 0.73, 1);
     }
     @keyframes __image-bounce {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-30px); }
-        100% { transform: translateY(0); }
+        0%   { transform: translateX(-50%) translateY(0); }
+        50%  { transform: translateX(-50%) translateY(-30px); }
+        100% { transform: translateX(-50%) translateY(0); }
     }
 }
