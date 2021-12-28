@@ -6,10 +6,13 @@
 
     &__big-text {
         font-size: 40px;
+        @include font-regular;
     }
 
     &__lil-text {
-        font-size: 30px;
+        font-size: 35px;
+        text-align: start;
+        @include font-regular;
     }
 
     &__text-block {
