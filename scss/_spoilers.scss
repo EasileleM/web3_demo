@@ -5,18 +5,18 @@
 .section-spoilers {
 
     &__big-text {
-        font-size: 40px;
+        font-size: 55px;
         @include font-regular;
     }
 
     &__lil-text {
-        font-size: 35px;
+        font-size: 30px;
         text-align: start;
         @include font-regular;
     }
 
     &__text-block {
-        padding: 20px 0;
+        padding: 30px 0;
         text-align: center;
     }
 }
