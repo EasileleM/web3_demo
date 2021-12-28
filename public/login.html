@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Basic information. Roadmap of the project. And much more."/>
     <meta property="og:site_name" content="Factory World game official website."/>
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://factorywrld.com/img/preview.png"/>
     <meta property="og:description" content="The official site of our game. Log in through a convenient wallet and start developing your industrial world!"/>
-    <title>In progress</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Factory World</title>
   </head>
   <body>
-    <div>
-      <button id="loginWax">wax login</button>
-      <button id="loginAnchor">anchor login</button>
-      <div id="results"></div>
+    <!-- Home page -->
+    <div class="wrapper wrapper-login">
+      <header class="header">
+        <div class="header__title-container">
+          <h1 class="header__title">Factory World</h1>
+        </div>
+        <nav class="header__nav">
+          <div class="header__links">
+            <a class="header__link" href="/">Home</a>
+        </div>
+        </nav>
+      </header>
+      <section class="section section-login">
+        <p class="login-text">Please, choose your wallet</p>
+        <button class="loginButton" id="loginWax"><img class="loginButton__image" src="/img/wax.png" /> WAX WALLET</button>
+        <button class="loginButton" id="loginAnchor"><img class="loginButton__image loginButton__image-anchor" src="/img/anchor.svg" /> ANCHOR WALLET</button>
+      </section>
     </div>
     <script src="https://unpkg.com/anchor-link@3"></script>
     <script src="https://unpkg.com/anchor-link-browser-transport@3"></script>
