@@ -89,6 +89,8 @@
     }
 
     &__title {
+        transition: 200ms ease;
+        cursor: pointer;
         color: $white;
         font-size: 25px;
         font-family: $font;
@@ -98,7 +100,12 @@
         }
     }
 
+    &__title:hover {
+        opacity: .8;
+    }
+
     &__link {
+        transition: 200ms ease;
         cursor: pointer;
         margin-right: 23px;
         color: $white;
@@ -107,6 +114,10 @@
         @media screen and (max-width:$tablet-size){
             display: none;
         }
+    }
+
+    &__link:hover {
+        opacity: .8;
     }
 
     &__link:last-child {

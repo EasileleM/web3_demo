@@ -6,6 +6,7 @@
 }
 
 .loginButton {
+    transition: 200ms ease;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -56,6 +57,11 @@
     &__image-anchor {
         transform: scale(1.5);
     }
+}
+
+
+.loginButton:hover {
+    opacity: .8;
 }
 
 .section-login {
