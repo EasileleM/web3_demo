@@ -27,7 +27,7 @@
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
 
-        @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
+        @media (min-width:280px) and (max-width:$mobileL-size){
             width: 192px;
         }
         @media (min-width:426px) and (max-width:$mobileXXL-size){
@@ -44,7 +44,7 @@
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
 
-        @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
+        @media (min-width:280px) and (max-width:$mobileL-size){
             width: 300px;
         }
         @media (min-width:426px) and (max-width:$mobileXXL-size){
@@ -156,7 +156,7 @@
     align-items: center;
     margin-bottom: 170px;
 
-    @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
+    @media (min-width:280px) and (max-width:$mobileL-size){
         margin-bottom: 162px;
     }
     @media (min-width:426px) and (max-width:$mobileXXL-size){
@@ -175,7 +175,7 @@
         z-index: 100000;
         @include font-regular;
 
-        @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
+        @media (min-width:280px) and (max-width:$mobileL-size){
             font-size: 40px;
             text-align: center;
         }
