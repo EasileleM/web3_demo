@@ -5,12 +5,14 @@
 .section-spoilers {
 
     &__big-text {
+        margin: 30px 0;
         font-size: 55px;
         @include font-regular;
     }
 
     &__lil-text {
-        font-size: 30px;
+        margin: 30px 0;
+        font-size: 27px;
         text-align: start;
         @include font-regular;
     }
@@ -23,36 +25,59 @@
 
 .spoilers {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     width: 100%;
 
     &__left-blocks {
         display: flex;
         flex-direction: column;
         align-items:center;
-        justify-content: space-around;
+        justify-content: space-between;
+        flex-basis: 700px;
+        flex-grow: 1;
     }
 
     &__right-blocks {
         display: flex;
         align-items:center;
         justify-content: center;
+        flex-basis: 300px;
+        flex-grow: 1;
     }
 
     &__g-block {
         margin: 15px;
         padding: 25px;
         background-color: #491020;
-        height: 300px;
-        width: 700px;
         border-radius: 35px;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__v-block {
+        margin: 15px;
+        padding: 25px;
+        background-color: #491020;
+        border-radius: 35px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     &__g-text {
         margin: 10px;
         font-size: 10px;
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
+    &__v-text {
+        flex-basis: 300px;
+        flex-grow: 1;
+        margin: 10px;
     }
 
     &__big-text {
@@ -75,17 +100,5 @@
     &__v-img {
         height: 300px;
         width: auto;
-    }
-
-    &__v-block {
-        padding: 25px;
-        background-color: #491020;
-        height: 630px;
-        width: 500px;
-        border-radius: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
     }
 }
