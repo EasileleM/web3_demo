@@ -5,6 +5,53 @@
     background-size: cover;
     background-color: #171F3D;
     height: 100vh;
+    position: relative;
+}
+
+.section-home {
+    display: flex;
+    justify-content: center;
+    
+
+    &__sun-image {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        width: 50%;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+
+        @media screen and (max-width:$mobileS-size){
+            width: 60%;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        width: 93%;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        
+        @media screen and (max-width:$mobileS-size){
+            width: 93%;
+        }
+    }
+
+    &__image-bounce {
+        animation-name: __image-bounce;
+        animation-timing-function: cubic-bezier(0.27,-0.01, 0.73, 1);
+    }
+
+    @keyframes __image-bounce {
+        0%   { transform: translateX(-50%) translateY(0); }
+        50%  { transform: translateX(-50%) translateY(-30px); }
+        100% { transform: translateX(-50%) translateY(0); }
+    }
 }
 
 .header {
@@ -34,7 +81,7 @@
         font-family: $font;
         font-weight: 200;
         @media screen and (max-width:$tablet-size){
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
@@ -66,18 +113,17 @@
     }
 
     &__mobile-links-active {
-        @include flex(flex-start, center_);
+        @include flex(flex-start, center);
     }
 
-    &__mobile-burger {
-        align-self: flex-end;
-        padding-top: 28px;
-        padding-right: 15px;
+    
 
-        @media screen and (min-width: 426px){
-            margin-right: 35px;
-            margin-top: 6px;
-        }
+    &__header-mobile {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__mobile-links-container {
@@ -92,6 +138,7 @@
         font-size: 22px;
     }
 }
+
 .welcome-text {
     display: flex;
     flex-direction: column;
@@ -99,7 +146,7 @@
 
     &__big-text {
         font-family: $font;
-        color: #fff;
+        color: $white;
         font-size: 70px;
         position: relative;
         z-index: 100000;
@@ -129,40 +176,22 @@
     }
 }
 
-.section-home {
-    display: flex;
-    justify-content: center;
-    position: relative;
+.burger {
+    display: none;
 
-    &__sun-image {
-        position: absolute;
-        left: 50%;
-        top: 150px;
-        transform: translateX(-50%);
-        height: 340px;
-        width: auto;
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
+    &__line {
+        margin-bottom: 6px;
+        background-color: $white;
+        width: 30px;
+        height: 3px;
+        border-radius: 5px;
     }
 
-    &__image {
-        position: absolute;
-        left: 50%;
-        top: 300px;
-        transform: translateX(-50%);
-        height: 310px;
-        width: auto;
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
+    &__line:last-child {
+        margin-bottom: 0;
     }
 
-    &__image-bounce {
-        animation-name: __image-bounce;
-        animation-timing-function: cubic-bezier(0.27,-0.01, 0.73, 1);
-    }
-    @keyframes __image-bounce {
-        0%   { transform: translateX(-50%) translateY(0); }
-        50%  { transform: translateX(-50%) translateY(-30px); }
-        100% { transform: translateX(-50%) translateY(0); }
+    @media screen and (max-width:$tablet-size){
+        display: block;
     }
 }

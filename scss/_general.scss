@@ -27,11 +27,6 @@ $smoll-side-paddings: 15px;
     font-weight: 400;
 }
  
-@mixin font-medium {
-    font-family: $font;
-    font-weight: 500;
-}
-
 @mixin flex($jc, $ai) {
     display: flex;
     flex-wrap: wrap;
