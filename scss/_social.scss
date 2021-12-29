@@ -1,0 +1,34 @@
+.wrapper-social {
+    margin-bottom: 50px;
+}
+
+.section-social {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    padding: 10px;
+    width: 80%;
+    height: 350px;
+    background-color: #f8f8f8;
+    border-radius: 30px;
+
+    &__name-block {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 60px;
+        @include gradient;
+        @include font-regular;
+    }
+
+    &__img-block {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__img {
+        width: 23%;
+        height: auto;
+    }
+}

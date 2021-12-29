@@ -1,0 +1,57 @@
+$font: 'Trebuchet MS', sans-serif;
+$white: #fff;
+$black: #000;
+$wrap: 1350px;
+$section: 750px;
+$mc: 0 auto;
+$big-tablet-size: 1260px;
+$medium-tablet-size: 1000px;
+$tablet-size: 768px;
+$mobileS-size: 320px;
+$mobileM-size: 375px;
+$mobileL-size: 425px;
+$mobileXXL-size: 550px;
+$footer-width: 900px;
+$side-paddings: 50px;
+$smoll-side-paddings: 15px;
+
+@mixin gradient {
+    background-color: #74cefe;
+    background-image: linear-gradient(90deg, #be76ff, #74cefe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin font-regular {
+    font-family: $font;
+    font-weight: 400;
+}
+ 
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+body {
+    background: $white;
+    font-family: $font;
+    color: $white;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.section {
+    max-width: $wrap;
+    margin: $mc;
+    padding: 0 $side-paddings;
+    @media screen and (max-width:$mobileL-size){
+        padding: $smoll-side-paddings;
+    }
+}
+
+.wrapper {
+    width: 100%;
+}

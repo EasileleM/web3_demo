@@ -30,8 +30,12 @@
     function assetHtml(asset) {
         return `
             <div class="asset">
-                <p class="asset__name">${asset.name}</p>
+                <div class="asset__imageblock">
                 <img class="asset__image" src="${getImageUrl(asset.img)}" />
+                </div>
+                <div class="asset__textblock">
+                <p class="asset__name">${asset.name}</p>
+                </div>
             </div>
         `
     }
@@ -112,6 +116,7 @@
         document.querySelector(LOAD_MORE_BUTTON_SELECTOR).addEventListener('click', loadMore)
         document.querySelector(LOGOUT_BUTTON_SELECTOR).addEventListener('click', logout)
         document.querySelector(ACCOUNT_NAME_SELECTOR).innerHTML = accountName
+        document.querySelector(ACCOUNT_NAME_SELECTOR).href = `https://wax.atomichub.io/explorer/account/${accountName}`
         loadMore()
     } else {
         window.location.replace('/login')
