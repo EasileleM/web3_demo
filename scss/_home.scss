@@ -125,13 +125,13 @@
     }
 
     &__mobile-links {
+        background-color: #370e4d;
         display: none;
         position: fixed;
         width: 100vw;
         height: 100vh;
         left: 0;
         top: 0;
-        background-color: #2e2944;
         z-index: 10;
         flex-direction: column;
     }
@@ -142,10 +142,14 @@
 
     &__header-mobile {
         margin: 0;
-        padding: 15px;
+        padding: 21px 50px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+
+        @media screen and (max-width:$mobileL-size){
+            padding: 15px;
+        }
     }
 
     &__mobile-links-container {
