@@ -23,29 +23,35 @@
         top: 180px;
         transform: translateX(-50%);
         height: auto;
-        width: 500px;
+        width: 400px;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
 
-        @media screen and (max-width:$mobileL-size){
+        @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
             width: 192px;
         }
-        @media screen and (max-width:$mobileXXL-size){
+        @media (min-width:426px) and (max-width:$mobileXXL-size){
             width: 260px;
+        }
+        @media (min-width:551px) and (max-width:$tablet-size){
+            width: 325px;
         }
     }
 
     &__image {
         height: auto;
-        width: 1000px;
+        width: 600px;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
 
-        @media screen and (max-width:$mobileL-size){
+        @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
             width: 300px;
         }
-        @media screen and (max-width:$mobileXXL-size){
+        @media (min-width:426px) and (max-width:$mobileXXL-size){
             width: 400px;
+        }
+        @media (min-width:551px) and (max-width:$tablet-size){
+            width: 500px;
         }
     }
 
@@ -123,8 +129,6 @@
         @include flex(flex-start, center);
     }
 
-    
-
     &__header-mobile {
         margin: 0;
         padding: 15px;
@@ -150,34 +154,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 170px;
 
-    @media screen and (max-width:$mobileL-size){
+    @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
         margin-bottom: 162px;
     }
-    @media screen and (max-width:$mobileXXL-size){
+    @media (min-width:426px) and (max-width:$mobileXXL-size){
+        margin-bottom: 155px;
+    }
+    @media (min-width:551px) and (max-width:$tablet-size){
         margin-bottom: 155px;
     }
 
     &__big-text {
         font-family: $font;
         color: $white;
-        font-size: 70px;
+        font-size: 55px;
+        text-align: center;
         position: relative;
         z-index: 100000;
         @include font-regular;
 
-        @media screen and (max-width:$mobileL-size){
+        @media (min-width:$mobileS-size) and (max-width:$mobileL-size){
             font-size: 40px;
             text-align: center;
-        }
-        @media screen and (max-width:$mobileXXL-size){
-            font-size: 55px;
-            text-align: center;
-        }
-
-        @media screen and (max-width:$tablet-size){
-            z-index: 0;
         }
     }
 
