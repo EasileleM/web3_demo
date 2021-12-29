@@ -2,11 +2,133 @@
     color: black;
 }
 
+.section-roadmap-modal {
+    display: none;
+
+    &_active {
+        display: flex;
+    }
+}
+
+.section-roadmap {
+    display: none;
+
+    &_active {
+        display: flex;
+    }
+
+    &__modal-text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #f8f8f8;
+        border-radius: 30px;
+        margin: 50px 0;
+        min-height: 540px;
+
+        @media screen and (max-width:$tablet-size){
+            min-height: 740px;
+        }
+
+        @media screen and (max-width:$mobileXXL-size){
+            min-height: 1020px;
+        }
+
+        @media screen and (max-width:$mobileM-size){
+            min-height: 1200px;
+        }
+    }
+
+    &__title {
+        font-weight: 100;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: #969696;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__controls {
+        margin-top: 10px;
+        color: #969696;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__close-button {
+        cursor: pointer;
+        transition: 200ms ease;
+    }
+
+    &__close-button:hover {
+        opacity: .8;
+    }
+
+    &__next-button {
+        cursor: pointer;
+        transition: 200ms ease;
+    }
+
+    &__next-button:hover {
+        opacity: .8;
+    }
+
+}
+
 .roadmap {
     padding: 50px 0;
 
-    &__img {
+    &__img-container {
+        position: relative;
         width: 100%;
+    }
+
+    &__img {
+        height: auto;
+        width: 100%;
+    }
+
+    &__quarter {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    &__quarter_1 {
+        width: 12%;
+        height: 14%;
+        left: 14%;
+        top: 29%;
+    }
+
+    &__quarter_2 {
+        width: 14%;
+        height: 15%;
+        left: 30%;
+        top: 47%;
+    }
+
+    &__quarter_3 {
+        width: 12%;
+        height: 15%;
+        left: 52%;
+        top: 33%;
+    }
+
+    &__quarter_4 {
+        width: 15%;
+        height: 18%;
+        left: 73%;
+        top: 47%;
     }
 
     &__name {
