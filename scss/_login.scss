@@ -1,4 +1,6 @@
 .wrapper-login {
+    overflow: hidden;
+    position: relative;
     height: 100vh;
     background-size: cover;
     background-image: url('../img/background.png');
@@ -66,6 +68,7 @@
 }
 
 .section-login {
+    z-index: 100;
     position: absolute;
     top: 50%;
     left: 50%;
