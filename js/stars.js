@@ -22,7 +22,7 @@
         return num;
     }
 
-    const STARS_AMOUNT = 200
+    const STARS_AMOUNT = 100
 
     const MAX_STAR_ANIMATION_TIME = 1.5
     const MIN_STAR_ANIMATION_TIME = 0.5
