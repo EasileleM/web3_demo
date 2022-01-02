@@ -154,10 +154,14 @@
 
     &__header-mobile {
         margin: 0;
-        padding: 15px;
+        padding: 21px 50px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+
+        @media screen and (max-width:$mobileL-size){
+            padding: 15px;
+        }
     }
 
     &__mobile-links-container {

@@ -41,6 +41,11 @@
     }
 
     &__link {
+        transition: 200ms ease;
         display: block;
+    }
+
+    &__link:hover {
+        opacity: .8;
     }
 }
