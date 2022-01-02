@@ -1,14 +1,14 @@
 .wrapper-home {
-    background-image: url('../img/background-light.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #171F3D;
+    background-color: #260550;
     height: 100vh;
     position: relative;
 }
 
 .section-home {
+    z-index: 1;
     display: flex;
     flex-direction: column;
 
@@ -36,6 +36,10 @@
         @media (min-width:551px) and (max-width:$tablet-size){
             width: 325px;
         }
+    }
+
+    &__image-container {
+        z-index: 100;
     }
 
     &__image {
@@ -68,6 +72,11 @@
 }
 
 .header {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1000;
     width: 100%;
     max-width: $wrap;
     margin: $mc;
@@ -90,6 +99,7 @@
 
     &__title {
         transition: 200ms ease;
+        transition-property: opacity;
         cursor: pointer;
         color: $white;
         font-size: 25px;
@@ -106,6 +116,7 @@
 
     &__link {
         transition: 200ms ease;
+        transition-property: opacity;
         cursor: pointer;
         margin-right: 23px;
         color: $white;
@@ -125,13 +136,14 @@
     }
 
     &__mobile-links {
+        z-index: 100;
         display: none;
         position: fixed;
         width: 100vw;
         height: 100vh;
         left: 0;
         top: 0;
-        background-color: #2e2944;
+        background-color: #260550;
         z-index: 10;
         flex-direction: column;
     }
@@ -226,3 +238,69 @@
         display: block;
     }
 }
+
+.home__star {
+    position: absolute;
+    will-change: opacity, left, top;
+    animation-iteration-count: infinite;
+    animation-name: blinkingStar;
+    animation-direction: alternate;
+    opacity: .3;
+    background-size: contain;
+}
+
+.home__stars-static-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home__star_1 {
+    background-image: url('../img/1-star.png');
+}
+
+.home__star_2 {
+    background-image: url('../img/2-star.png');
+}
+
+.home__star_3 {
+    background-image: url('../img/3-star.png');
+}
+
+.home__star_4 {
+    background-image: url('../img/4-star.png');
+}
+
+.home__star_5 {
+    background-image: url('../img/5-star.png');
+}
+
+.home__star_6 {
+    background-image: url('../img/6-star.png');
+}
+
+.home__star_7 {
+    background-image: url('../img/7-star.png');
+}
+
+.home__star_8 {
+    background-image: url('../img/8-star.png');
+}
+
+.home__star_9 {
+    background-image: url('../img/9-star.png');
+}
+
+.home__star_10 {
+    background-image: url('../img/10-star.png');
+}
+
+@keyframes blinkingStar {
+    0% {
+      opacity: .3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

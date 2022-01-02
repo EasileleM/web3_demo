@@ -90,6 +90,7 @@
     background: #ea923e;
     cursor: pointer;
     transition: 200ms ease;
+    transition-property: opacity;
 
     &:hover {
         opacity: .9;
