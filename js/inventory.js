@@ -4,7 +4,7 @@
     let isLoading = false
     let loadedAll = false
 
-    const COLLECTION_NAME = 'econimicafuk'
+    const COLLECTION_NAME = 'factoryworld'
     const MAX_CARD_PER_PAGE = 8
 
     const ASSETS_CONTAINTER_SELECTOR = '#assetsContainer'
