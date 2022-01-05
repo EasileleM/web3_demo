@@ -69,6 +69,18 @@
         justify-content: center;
     }
 
+    &__g-block,
+    &__v-block {
+        transition: 200ms ease;
+        transition-property: transform, box-shadow;
+    }
+
+    &__g-block:hover,
+    &__v-block:hover {
+        transform: translate(-1%, -1%);
+        box-shadow: 4px 4px 0px 4px #000000;
+    }
+
     &__g-text {
         margin: 10px;
         font-size: 10px;
