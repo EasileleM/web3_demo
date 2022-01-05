@@ -148,14 +148,11 @@
         @media (min-width:280px) and (max-width:$mobileL-size){
             margin: 10px;
         }
+        cursor: pointer;
     }
 
     &__button_active {
-        &__cross-v{
-            display: none;
-        }
-
-        &__cross-g{
+        .faq__cross-v{
             display: none;
         }
     }

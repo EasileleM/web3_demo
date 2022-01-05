@@ -78,7 +78,7 @@
     &__g-block:hover,
     &__v-block:hover {
         transform: translate(-1%, -1%);
-        box-shadow: 4px 4px 0px 4px #000000;
+        box-shadow: 4px 4px 0px 4px rgba(0,0,0,0.4);
     }
 
     &__g-text {
