@@ -72,13 +72,13 @@
     &__g-block,
     &__v-block {
         transition: 200ms ease;
-        transition-property: transform, box-shadow, opacity;
+        transition-property: transform, box-shadow;
     }
 
     &__g-block:hover,
     &__v-block:hover {
-        transform: scale(98%);
-        box-shadow: 0px 0px 2px 1px #31060e;
+        transform: translate(-1%, -1%);
+        box-shadow: 4px 4px 0px 4px #000000;
     }
 
     &__g-text {
