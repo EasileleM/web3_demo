@@ -72,10 +72,7 @@
 }
 
 .header {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+    position: relative;
     z-index: 1000;
     width: 100%;
     max-width: $wrap;
@@ -225,6 +222,7 @@
 
 .burger {
     display: none;
+    cursor: pointer;
 
     &__line {
         margin-bottom: 6px;
