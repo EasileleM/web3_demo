@@ -33,10 +33,6 @@
         mobileLink.addEventListener('click', toggleBurgerMenu)
     })
 
-    document.querySelectorAll('.header__burger').forEach(mobileLink => {
-        mobileLink.addEventListener('click', toggleBurgerMenu)
-    })
-
     document.querySelectorAll('.section-roadmap__next-button').forEach(button => {
         button.addEventListener('click', nextModal)
     })

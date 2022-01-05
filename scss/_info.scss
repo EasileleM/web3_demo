@@ -138,14 +138,11 @@
         margin: 20px;
         background-color: transparent;
         border: none;
+        cursor: pointer;
     }
 
     &__button_active {
-        &__cross-v{
-            display: none;
-        }
-
-        &__cross-g{
+        .faq__cross-v{
             display: none;
         }
     }
