@@ -1,5 +1,18 @@
 (function () {
-    const isLoginPage = window.location.href.includes('login')
+    const starsWrapper = (function () {
+        if (window.location.href.includes('login')) {
+            return '.wrapper-login'
+        }
+
+        if (window.location.href.includes('inventory')) {
+            return '.wrapper-inventory'
+        }
+
+        return '.wrapper-home'
+    })()
+    const useStarsParallax = (function () {
+        return !(window.location.href.includes('login') || window.location.href.includes('inventory'))
+    })()
 
     function mulberry32(a) {
         return function() {
@@ -45,7 +58,7 @@
     }
 
     function initStars() {
-        const wrapperElement = document.querySelector(isLoginPage ? '.wrapper-login' : '.wrapper-home')
+        const wrapperElement = document.querySelector(starsWrapper)
         const {clientHeight: wrapperHeight, clientWidth: wrapperWidth} = wrapperElement
         const stars = []
         for (let i = 0; i < STARS_AMOUNT; i++) {
@@ -72,7 +85,7 @@
             stars.push(star)
         }
         wrapperElement.append(...stars)
-        if (!isLoginPage) {
+        if (useStarsParallax) {
             new Rellax('.home__star')
         }
     }
@@ -86,7 +99,7 @@
         })
     }
 
-    if (!isLoginPage) {
+    if (useStarsParallax) {
         new Rellax('.home__stars-static')
     }
     initStars()
@@ -100,5 +113,5 @@
         }
     });
 
-    resizeObserver.observe(document.querySelector(isLoginPage ? '.wrapper-login' : '.wrapper-home'));
+    resizeObserver.observe(document.querySelector(starsWrapper));
 })()
