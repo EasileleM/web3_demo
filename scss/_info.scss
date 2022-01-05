@@ -1,0 +1,199 @@
+.wrapper-info {
+    background-color: #230551;
+    height: 100%;
+    position: relative;
+}
+
+.section-info {
+    margin-top: 80px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    &__block {
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #230551;
+    }
+
+    &__big-text {
+        margin: 15px 0;
+        @include gradient2;
+        font-size: 50px;
+        @include font-regular;
+        text-align: center;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            font-size: 40px;
+        }
+    }
+
+    &__mid-text {
+        margin: 30px 0;
+        font-size: 35px;
+        @include font-regular;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            font-size: 30px;
+        }
+    }
+
+    &__lil-text {
+        margin: 30px 0;
+        font-size: 33px;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            font-size: 25px;
+        }
+    }
+
+    &__img {
+        margin: 10px;
+        width: 600px;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            width: 280px;
+        }
+    }
+}
+
+.section-info-block3 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    &__lil-block {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    &__lil-block-img-txt {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width:$tablet-size){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__lil-img {
+        margin: 35px;
+        width: 300px;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            width: 230px;
+        }
+    }
+}
+
+.colortext-blue {
+    color: #9580ff;
+}
+
+.colortext-orange {
+    color: #da9945;
+}
+
+.faq {
+    width: 100%;
+
+    &__name {
+        margin: 30px 0;
+        font-size: 100px;
+        text-align: center;
+        @include gradient3;
+        @include font-regular;
+    }
+
+    &__block {
+        margin: 30px 0;
+        padding: 30px;
+        height: 130px;
+        width: 100%;
+        background-color: #17082b;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__big-text {
+        margin: 0 30px;
+        @include gradient2;
+        font-size: 45px;
+        @include font-regular;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            font-size: 40px;
+        }
+    }
+
+    &__button {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin: 20px;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__button_active {
+        &__cross-v{
+            display: none;
+        }
+
+        &__cross-g{
+            display: none;
+        }
+    }
+
+    &__cross-g {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    &__cross-v {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 5px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    &__block2 {
+        margin: 30px 0;
+        padding: 30px;
+        height: auto;
+        width: 100%;
+        background-color: #17082b;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    &__block2_active {
+        display: flex;
+    }
+
+    &__lil-text {
+        margin: 30px 0;
+        font-size: 33px;
+
+        @media (min-width:280px) and (max-width:$mobileL-size){
+            font-size: 25px;
+        }
+    }
+}
