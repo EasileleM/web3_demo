@@ -5,7 +5,6 @@
     }
 
     function toggleFaqQuestion(index) {
-        console.log(index)
         const question = document.querySelectorAll('.faq__block2')[index]
         const button = document.querySelectorAll('.faq__button')[index]
         question.classList.toggle('faq__block2_active')
