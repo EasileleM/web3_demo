@@ -1,0 +1,3 @@
+/wax/testtest/wax/build/CMakeFiles/rebuild_cache.dir
+/wax/testtest/wax/build/CMakeFiles/wax_project.dir
+/wax/testtest/wax/build/CMakeFiles/edit_cache.dir

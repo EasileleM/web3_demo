@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+1a4feabf06425de539fce4c2815a6b4f CMakeFiles/wax_project
+29a5484ba659496ea842384d392c6d02 CMakeFiles/wax_project-complete
+a862b4263ba76eee325cbe8356ab12c7 wax_project-prefix/src/wax_project-stamp/wax_project-build
+ee665b9036208a4324737beed858e47b wax_project-prefix/src/wax_project-stamp/wax_project-configure
+2f2f822bdbe4b0043df4f221b39f9b4a wax_project-prefix/src/wax_project-stamp/wax_project-download
+2355f33d12771f26e5ad1ca96b544fd2 wax_project-prefix/src/wax_project-stamp/wax_project-install
+04776b9e6fa31b55f94fc834858c3120 wax_project-prefix/src/wax_project-stamp/wax_project-mkdir
+3ea964e397241f39614f4d8ef580e0fb wax_project-prefix/src/wax_project-stamp/wax_project-patch
+fedc3531842ba8cf199c4bb2352f503a wax_project-prefix/src/wax_project-stamp/wax_project-test
+57899de6e98f13c5ac90fa510be46a16 wax_project-prefix/src/wax_project-stamp/wax_project-update

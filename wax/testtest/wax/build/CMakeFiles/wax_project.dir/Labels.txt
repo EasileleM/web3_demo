@@ -1,0 +1,14 @@
+# Target labels
+ wax_project
+# Source files and their labels
+/wax/testtest/wax/build/CMakeFiles/wax_project
+/wax/testtest/wax/build/CMakeFiles/wax_project.rule
+/wax/testtest/wax/build/CMakeFiles/wax_project-complete.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-install.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-mkdir.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-download.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-update.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-patch.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-configure.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-build.rule
+/wax/testtest/wax/build/wax_project-prefix/src/wax_project-stamp/wax_project-test.rule

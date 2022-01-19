@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/wax/testtesttest/wax/src/../include/wax.hpp
+eosio/eosio.hpp
+-
+vector
+-
+
+/wax/testtesttest/wax/src/wax.cpp
+wax.hpp
+-
+
